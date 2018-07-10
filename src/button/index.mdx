@@ -1,0 +1,60 @@
+---
+name: Button
+---
+
+import {Playground, PropsTable} from 'docz'
+import Button from '.'
+import Items from '../items'
+
+# Button
+
+Button adds markup to am `a`, a `button`, an `input[type=submit]` or just text.
+
+## Properties
+
+<PropsTable of={Button} />
+
+## Static text
+
+<Playground>
+  <Button>Static button</Button>
+</Playground>
+
+## With link
+
+<Playground>
+  <Items spaceBetween>
+    <Button>
+      <a href="javascript:;">Link button</a>
+    </Button>
+    <Button modifier="primary">
+      <a href="javascript:;">Link button</a>
+    </Button>
+  </Items>
+</Playground>
+
+## With button
+
+<Playground>
+  <Items spaceBetween>
+    <Button>
+      <button type="button">Button</button>
+    </Button>
+    <Button modifier="primary">
+      <button type="button">Button</button>
+    </Button>
+  </Items>
+</Playground>
+
+## With input
+
+<Playground>
+  <Items spaceBetween>
+    <Button>
+      <input type="submit" value="Button" />
+    </Button>
+    <Button modifier="primary">
+      <input type="submit" value="Button" />
+    </Button>
+  </Items>
+</Playground>

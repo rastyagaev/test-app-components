@@ -1,16 +1,12 @@
-# components
+# Test app components
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+A set of isolated react components for using in base SSR test app.
 
-Describe components here.
+NOTE: It was build with (nwb)[https://github.com/insin/nwb#react-components-and-libraries], please see contributing instructions there.
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+## Documentation
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+Run `yarn docz dev` to see docs and component list.
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+## How to use in your application
+

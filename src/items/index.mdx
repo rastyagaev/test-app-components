@@ -1,0 +1,61 @@
+---
+name: Items
+---
+
+import {Playground, PropsTable} from 'docz'
+import Items, {Spacing} from '.'
+
+# Items
+
+The Items component renders simple list of elements using flexbox
+
+## Properties
+
+<PropsTable of={Items} />
+
+## Usage
+
+<Playground>
+  <Items>
+    <div style={{background: "pink"}}>Item 1</div>
+    <Spacing />
+    <div style={{background: "gold"}}>Item 2</div>
+    <div style={{background: "lightblue"}}>Item 3</div>
+  </Items>
+</Playground>
+
+## Space around
+
+<Playground>
+  <div style={{border: "1px solid black"}}>
+    <Items spaceAround>
+      <div style={{background: "pink"}}>Item 1</div>
+      <Spacing />
+      <div style={{background: "gold"}}>Item 2</div>
+      <div style={{background: "lightblue"}}>Item 3</div>
+    </Items>
+  </div>
+</Playground>
+
+## Space between
+
+<Playground>
+  <div style={{border: "1px solid black"}}>
+    <Items spaceBetween>
+      <div style={{background: "pink"}}>Item 1</div>
+      <Spacing />
+      <div style={{background: "gold"}}>Item 2</div>
+      <div style={{background: "lightblue"}}>Item 3</div>
+    </Items>
+  </div>
+</Playground>
+
+## Column
+
+<Playground>
+  <Items spaceBetween direction="column">
+    <div style={{background: "pink"}}>Item 1</div>
+    <div style={{background: "gold"}}>Item 2</div>
+    <div style={{background: "lightblue"}}>Item 3</div>
+  </Items>
+</Playground>

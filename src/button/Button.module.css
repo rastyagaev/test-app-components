@@ -1,0 +1,42 @@
+:local .button {
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: default;
+}
+
+:local .button > a,
+:local .button > button,
+:local .button > input {
+  cursor: pointer;
+}
+
+:local .button > * {
+  padding: 4px 10px;
+  display: inline-block;
+}
+
+:local .button > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:local .button > button,
+:local .button > input[type=submit] {
+  line-height: normal;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+}
+
+:local .default {
+  background: lightgray;
+  color: black
+}
+
+:local .primary {
+  background: lightblue;
+  color: black
+}

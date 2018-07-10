@@ -1,7 +1,7 @@
 {
-  "name": "components",
+  "name": "test-app-components",
   "version": "1.0.0",
-  "description": "components React component",
+  "description": "Test app React component",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -11,7 +11,7 @@
     "umd"
   ],
   "scripts": {
-    "build": "nwb build-react-component",
+    "build": "nwb build-react-component --copy-files",
     "clean": "nwb clean-module && nwb clean-demo",
     "start": "nwb serve-react-demo",
     "test": "nwb test-react",
@@ -23,6 +23,8 @@
     "react": "16.x"
   },
   "devDependencies": {
+    "docz": "^0.5.5",
+    "docz-plugin-css": "^0.5.5",
     "nwb": "0.21.x",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"

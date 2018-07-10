@@ -1,0 +1,28 @@
+---
+name: Footer
+---
+
+import {Playground, PropsTable} from 'docz'
+import Footer from '.'
+import {Spacing} from '../items'
+import {default as AppTheme} from '../theme'
+
+# Footer
+
+Footer renders application footer.
+
+## Properties
+
+<PropsTable of={Footer} />
+
+## Basic usage
+
+<Playground>
+  <AppTheme>
+    <Footer motto="Test app">
+      <Spacing />
+      <a href="/about">About</a>
+      <a href="/about">Sign in</a>
+    </Footer>
+  </AppTheme>
+</Playground>
