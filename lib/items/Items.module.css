@@ -1,0 +1,29 @@
+:local .items {
+  display: flex;
+}
+
+:local .items:global(.space-between.row) > *:not(:last-child) {
+  margin-right: 25px;
+}
+
+:local .items:global(.space-between.column) > *:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+:local .items:global(.space-around.row) {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+:local .items:global(.space-around.column) {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+:local .items:global(.column) {
+  flex-direction: column
+}
+
+:local .spacing {
+  flex: 1;
+}

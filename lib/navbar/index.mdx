@@ -1,0 +1,32 @@
+---
+name: Navbar
+---
+
+import {Playground, PropsTable} from 'docz'
+import Navbar from '.'
+import {Spacing} from '../items'
+import Button from '../button'
+import {default as AppTheme} from '../theme'
+
+# Navbar
+
+Navbar allows to show navigation as group of buttons or other elements.
+Ususlly placed at the top of the page. Use `Spacing` to move elements to the right.
+
+## Properties
+
+<PropsTable of={Navbar} />
+
+## Basic usage
+
+<Playground>
+  <AppTheme>
+    <Navbar>
+      <Spacing />
+      <a href="/sign-up">Sign up</a>
+      <Button modifier="primary">
+        <button type="button">Sign in</button>
+      </Button>
+    </Navbar>
+  </AppTheme>
+</Playground>
